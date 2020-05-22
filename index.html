@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quiz - Did You Escape From NY or LA?</title>
+    <link href="https://fonts.googleapis.com/css2?family=Russo+One&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
+    <link href="css/styles.css" rel="stylesheet">
+</head>
+<body>
+<div class="main-wrapper">
+    <div class="container">
+        <h2>Did you escape from L.A. or N.Y.?</h2>
+
+        <div id='progress-bar'></div>
+
+        <button id="quiz-start" class="btn" onclick="quizStart('quiz-start')">Start Quiz</button>
+
+        <div class="quiz-form">
+            <p>In which year did you escape?</p>
+            <div class="quiz-qu">
+                <input type="radio" id="year-ny" name="year" value="ny" />
+                <label for="year-ny">1997</label>
+            </div>
+            <div class="quiz-qu">
+                <input type="radio" id="year-la" name="year" value="la" />
+                <label for="year-la">2013</label>
+            </div>
+            <button disabled class="btn" onclick="checkAnswers(this)">Next...</button>
+        </div>
+
+        <div class="quiz-form">
+            <p>What caused the root of all of the chaos?</p>
+            <div class="quiz-qu">
+            <input type="radio" id="chaos-la" name="chaos" value="la" />
+            <label for="chaos-la">An earthquake</label>
+            </div>
+            <div class="quiz-qu">
+            <input type="radio" id="chaos-ny" name="chaos" value="ny" />
+            <label for="chaos-ny">World War 3</label>
+            </div>
+            <button disabled class="btn" onclick="checkAnswers(this)">Next...</button>
+        </div>
+
+        <div class="quiz-form">
+            <p>The president tries to stop an invasion from where?</p>
+            <div class="quiz-qu">
+            <input type="radio" id="president-la" name="president" value="la" />
+            <label for="president-la">Cuba</label>
+            </div>
+            <div class="quiz-qu">
+            <input type="radio" id="president-ny" name="president" value="ny" />
+            <label for="president-ny">Soviet Union</label>
+            </div>
+            <button disabled class="btn" onclick="checkAnswers(this)">Next...</button>
+        </div>
+
+        <div class="quiz-form">
+            <p>Where was an island converted into a prison?</p>
+            <div class="quiz-qu">
+                <input type="radio" id="prison-la" name="prison" value="la" />
+                <label for="president-la">LA</label>
+            </div>
+            <div class="quiz-qu">
+                <input type="radio" id="prison-ny" name="prison" value="ny" />
+                <label for="president-ny">Mahattan</label>
+            </div>
+            <button disabled class="btn" onclick="checkAnswers(this)">Next...</button>
+        </div>
+
+        <div class="quiz-form">
+            <p>Warning.. SPOILER ALERT: At the end of the movie, the main
+                character Snake, does what?</p>
+            <div class="quiz-qu">
+            <input type="radio" id="end-ny" name="end" value="ny" />
+            <label for="end-ny">Puffs a cigarette while going into the darkness</label>
+            </div>
+            <div class="quiz-qu">
+            <input type="radio" id="end-la" name="end" value="la" />
+            <label for="end-la">Picks a cigarette box labelled “American Spirit”</label>
+            </div>
+            <button disabled class="btn" onclick="checkAnswers(this)">Next...</button>
+        </div>
+
+        <div class="results">
+            <h3>Congrats, you are a survivor!<br />You just escaped from</h3>
+        </div>
+    </div>
+    <div class="footer">
+        &copy; 2020 - Petros Charitopoulos
+    </div>
+</div>
+    <script src="./js/script.js"></script>
+</body>
+</html>
